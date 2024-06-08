@@ -5,6 +5,7 @@ This repo contains artifacts & Python programs that can be use to ask a question
 Pre-requisite
 
 ElasticSearch Setup
+
 1. 
 
 Quickstart 
