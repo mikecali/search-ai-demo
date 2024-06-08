@@ -3,10 +3,12 @@
 This repo contains artifacts & Python programs that can be use to ask a question regarding the data that was ingested and index into Elasticsearch Cloud and query them using a Retrieval Augmented Generation (RAG) demo app.
 
 Pre-requisite
+1. Setup your python virtual environment
+2. Elastic Cloud Access - go to https://cloud.elastic.co/registration/ and register a new trial.
 
 ElasticSearch Setup
 
-1. Visit the Elastic Cloud Trial registration page at https://cloud.elastic.co/registration/ and register a new trial.
+1. Setup your Elastic Cloud with below details
    ```
       Name: your org 
       Cloud Provider: [any]
@@ -17,14 +19,14 @@ ElasticSearch Setup
 2. Verify your deployment and make sure you have the following deployment
 
   ```
-   - 3 Availability Zones
-   - 2 Elasticsearch data nodes
-   - 1 Elasticsearch tiebreaker node - 1 Enterprise Search node
-   - 1 Integration Server node
-   - 1 ML node
+      3 Availability Zones
+      2 Elasticsearch data nodes
+      1 Elasticsearch tiebreaker node - 1 Enterprise Search node
+      1 Integration Server node
+      1 ML node
   ```
 
-3. Now it is time to ingest the data from your selected website.
+   
     
 Quickstart 
 1. Clone this repo
@@ -53,6 +55,18 @@ Model = gpt-4o
 Temperature = 0
 ```
 
-5. To start the application, run the following command and substitute in your custom config.toml.
+5. Running our search app, Open a command/terminal window and navigate to the unzipped masterclass folder.
 
-```streamlit run genai-intel-demo.py```
+```
+pip install virtualenv
+source env/bin/activate
+pip install -r requirements.txt
+
+```
+
+6. Start the app. A new browser window should open! If it doesn’t, open a browser window and browse to http://localhost:8501
+
+```
+streamlit run vic-sro.py
+```
+
