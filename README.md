@@ -6,8 +6,26 @@ Pre-requisite
 
 ElasticSearch Setup
 
-1. 
+1. Visit the Elastic Cloud Trial registration page at https://cloud.elastic.co/registration/ and register a new trial.
+   ```
+      Name: your org 
+      Cloud Provider: [any]
+      Region: [any Australian region]
+      Hardware profile: CPU Optimized OR CPU Optimized ARM
+      Version: latest
+   ```
+2. Verify your deployment and make sure you have the following deployment
 
+  ```
+   - 3 Availability Zones
+   - 2 Elasticsearch data nodes
+   - 1 Elasticsearch tiebreaker node - 1 Enterprise Search node
+   - 1 Integration Server node
+   - 1 ML node
+  ```
+
+3. Now it is time to ingest the data from your selected website.
+    
 Quickstart 
 1. Clone this repo
 2. Enable python virtual environment
