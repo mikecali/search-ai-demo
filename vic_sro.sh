@@ -1,0 +1,1 @@
+streamlit run vic_sro.py
