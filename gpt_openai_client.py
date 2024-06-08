@@ -1,8 +1,6 @@
 import openai
 import tiktoken
 
-openai.api_key = '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'
-
 model_max_tokens = {
     'gpt-3.5-turbo': 60000,
     'gpt-3.5-turbo-0301': 4000,
